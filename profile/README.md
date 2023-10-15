@@ -31,6 +31,8 @@ Currently implemented features (~ meaning currently only available in alpha vers
  - [~] Extend candles with pattern analysis
    - [X] Conventional candle pattern matching.
    - [~] Swing Cycle
+- [~] Adaptive Learning
+   - [X] Process considerations from strategy and market consideration at time and after to train a system to better score a market's final advice 
 - Connectors
    - [X] RWA Ready (housing, art,...), easy plug to any "price outputting system."
 - [~] Fund & Risk Management
