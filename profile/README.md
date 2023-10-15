@@ -12,24 +12,40 @@ A final consensus is made on markets.
 
 This consensus is then relayed to the different "Trader" systems that each has under management a single Identity and its financial set (exchanges, assets, positions etc.). 
 
-
 In short, It manages your assets while you are sleeping.  
 
-Contact me: obusco+windfallerai@gmail.com ; fund us, and let's deal with all the regulatory licensing steps and open it up for 20$ a month :D
+Contact me: 
+- Closed beta: We will use Bybit so you can always keep control on your funds. Contact us, if you want to have access. - obusco+windfallerai@gmail.com
+- Funding Round: Let's work together to get all the legal done so we open it up for more than just crypto ! - obusco+windfallerai@gmail.com
 
+Currently implemented features (~ meaning currently only available in alpha version) : 
 
+- [X] Pricing system (monitors trades from various exchanges: Crypto, Stocks, Commodities, Forex,... and form candles)
+- [X] Extend candles with various strategy analysis
+   - [X] Volume Strategies (Breakout, Accumulation, OBV/Trend, Money Flow, crossing, pivots and classic VWMA)
+   - [X] BB Strategies (Breakout, Squeeze, DblTop/Bottom)
+   - [X] RSI & MACD (Divergence, WRSI,...)
+   - [X] Connors Strategies
+   - [X] Pivots Strategies
+   - [X] Direct Price (h/l, open/close, support & resistance, all-time high/low, hull price,...)
+ - [~] Extend candles with pattern analysis
+   - [X] Conventional candle pattern matching.
+   - [~] Swing Cycle
+- Connectors
+   - [X] RWA Ready (housing, art,...), easy plug to any "price outputting system."
+- [~] Fund & Risk Management
+   - [X] Coherent identity system taking multiple exchanges into consideration (including price arbitrage)
+   - [X] Trade management (SL and TP and standard risk management and exit strategy)
+   - [~] Support allowing trade management to also handle trade created by the user instead of the bot (Fire & Forget feature)   
+- [~] Production-ready (currently live with my funds). 
 
-Features: 
-- [X] RWA Ready
-- [X] Can management on Stocks, Forex, Crypto
-- [X] Can monitor Commodities
-- [~] Production-ready (currently in testing on my personal funds). 
-
-- CandleMaker: A plug-and-play system, plug to exchange (centralized, on-chain, etc...) and transform data into a standardized set of Candle (OHLCV), Ticker, and order book. 
-- Dow: Our modules take candles as input and perform hundreds of indicator computations (RSI, BB, MACD) and strategies on top of that (Breakout-and-test, pattern, fractals, etc...).
-- Agent: This qualifies the sentiments from those data. 
-- Post-Analysis: Adding meta-information across the market states (news, events, inter-market interaction,...), we "colorize" market intervals, markets, and assets into a standard -100;100 range.  
+Current: 
 - Simulator: Simulate some trader's typology, trying to "reason" as some bots, permabull, permabear, retails. And output an "advice" (BUY/SELL/ACCUMULATE...).
-- Oracle: Those pieces of information goes as input to a quorum of multiple oracle (AI system) that are trained to correct themselves on the advice vs. result.
-- Order Decision Making: All this information is emitted across the system, as such as the system propagates some "advice" that is then to be taken by an individual module that can perform that by taking into account the specificity of the assets under management (at Identity level).
-- Trade management: System that continuously monitors the market and provides new advice from the system (TP/SL/ Exit management). 
+- Post-Analysis: Adding meta-information across the market states (news, events, inter-market interaction,...), we "colorize" market intervals, markets, and assets into a standard -100;100 range.  
+- Oracle: Those pieces of information go as input to a quorum of multiple oracle (AI system) that are trained to correct themselves on the advice vs. result.
+
+Next: 
+- Better Order Decision Making: information is emitted across the system, as such as the system propagates some "advice" that is then to be taken by an individual module that can perform that by taking into account the specificity of the assets under management (at Identity level).
+- Social Agent : Qualifying social aspect into our extended set.
+- Fractals analysis
+- Improved Orderbook usage in the system and arbitrage opportunity management.
