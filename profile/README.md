@@ -1,4 +1,4 @@
-## Hi there 👋
+## Windfaller AI - Your own family office
 
 WindfallerAI is an automated algorithmic trading system using Consensus-Based Artificial Intelligence and Classical Calculus for Financial Market Analysis and Data Mapping Techniques.
 
